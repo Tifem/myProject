@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: steelblue;
+}
+h1{
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 50px 600px;
+    width: 50%;
+}
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+  
+}
+th{
+    text-align: left;
+}
+.first{
+    background-color:#0099ff;
+    color: white;
+}
+.second{
+    background-color: #0065ff;
+    color: white;
+}
+table{
+    background-color: white;
+    border-collapse: collapse;
+
+}

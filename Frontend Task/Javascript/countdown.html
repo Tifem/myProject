@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+.countdown-timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(85, 85, 85, 0.6), rgba(199, 199, 199, 0.2))
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 5px;
+  font-family: sans-serif;
+  text-align: center;
+}
+ul li span {
+  display: block;
+  font-size: 50px;
+  padding-top: 5px;
+  color: rgb(226, 206, 28);
+  font-weight: 600;
+}
+
+
+</style>
+<body>
+  <div class="countdown-timer">
+    <h1 class="greet">Timer To Your Next Birthday</h1>
+    <input type="datetime-local" name="" id="proposed_time">
+    <button id="startCounting">Start Countdown</button> 
+    <p id="demo"></p>
+  </div>
+ <script src="Js/countdown.js"></script>
+</body>
+
+</html>

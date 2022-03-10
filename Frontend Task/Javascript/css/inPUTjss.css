@@ -1,0 +1,103 @@
+
+    body{
+         margin-top: 50px;
+         padding: 0;
+        
+    }
+    .Container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .content{
+        width: 40%;
+        
+    }
+    .maindiv{
+        background-color: green;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    .this{
+        width: 390px;
+        background-color: white;
+        text-align: right;
+        padding: 4px;
+        padding-right: 5px;
+        float: right;
+        margin-right: 30px;
+    }
+
+    .second{
+        background-color: whitesmoke;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .left{
+        margin-left: 10px;
+        line-height: 1px;
+        
+            
+    }
+    .right{
+            line-height: 1px;
+            float: right;
+            padding-right:10px;
+    }
+    .there{
+        line-height: 1px;
+    }
+    /* .you{
+        margin-left: 40px;
+        padding: 0px;
+    } */
+    table, th,td{
+        border: 1px solid white;
+        border-collapse: collapse;
+        height: 25px;
+    }
+    table{
+        width: 100%;
+    }
+    .firstt{
+        background-color: green;
+        text-align: center;
+        color: white;
+        width: 4%;
+    }
+    .description{
+        background-color: rgb(223, 215, 215);
+        width: 30%;
+    }
+    .amount{
+        background-color: rgb(177, 165, 165);
+        width: 33%;
+    }
+    .total{
+        background-color: green;
+        color: white;
+        width: 33%;
+    }
+    hr{
+        /* border: 0.5px solid green; */
+        margin-left: 50%;
+        border:none;
+        border-bottom: 0.1px solid green;
+        /* border-color: green;  */
+    }
+.rule{
+    margin-left: 55%;
+    line-height: 3px;
+
+}
+.last{
+    line-height: 0.5px;
+    border-left: 4px solid blue;
+    border-radius: 3px;
+    height: 35px;
+}

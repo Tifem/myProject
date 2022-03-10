@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/inPUTjss.css">
+</head>
+
+<body>
+<div class="Container">
+    <div class="content">
+        <div class="maindiv">
+            <div class="main">
+                <img src="../Images/ogunlogo (1).png" alt="" width="70px" height="70px" style="padding:25px; padding-top:10px;">
+                <div class="you"><img src="" alt="" style="color: white;" >
+                <p style="font-size: 20px; color: white;"><b>Receipt</b></p></div>
+            </div>
+
+           <div>
+            <p class="this">OgunState Internal Revenue Service</p>
+            <p class="this">Parastatal building, Oke-mosan, Abeokuta, Ogun State</p>
+            <p class="this">080-602-407-72</p>
+            <p class="this">info@ogunstaterevenue.com</p>
+            </div>
+        </div>
+        
+        <div class="second">
+            <div class="left">
+                <p>Receipt from:</p>
+                <p id="showname"></p>
+                <p style="font-size: 15px;" id="showStin">STIN: <span id="showStin"></span></p>
+                <p style="font-size: 17px; color: blue; margin-top: 50px;"><b>Payment code: 00700000000030</b></p>
+            </div>
+            <div class="right">
+                <p style="font-size: 20px; color: blue;" class="there"><b> PAYMENT RECEIPT</b></p>
+                <p class="there">Date issued:</p>
+                <p class="there">2021-11-22 18:01:05</p>
+                <img src="../Images/code.png" alt="" width="80px" height="80px">
+            </div>    
+        </div>
+        <!-- <div> -->
+            <table>
+                <tr>
+                <th class="first">#</th>
+                <th class="description" style="text-align: left;">Description</th>
+                <th class="amount">Total Amount Payable</th>
+                <th class="total">TOTAL</th>
+                </tr>
+                <tr>
+                    <td class="firstt">1</td>
+                    <td class="description">Direct Assessment</td>
+                    <td class="amount" id="dirAmt"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td class="firstt">2</td>
+                    <td class="description">Stamp Duty</td>
+                    <td class="amount" id="stampAmt"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td class="firstt">3</td>
+                    <td class="description">Development Levy</td>
+                    <td class="amount" id="devAmt"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td class="firstt">4</td>
+                    <td class="description">Admin Charges</td>
+                    <td class="amount" id="adminAmt"></td>
+                    <td class="total"></td>
+                </tr>
+    
+            </table>
+        <!-- </div> -->
+        <p style="font-size: 12px;" class="rule"><b>SUBTOTAL</b></p>
+        <hr>
+        <p style="font-size: 12px;" class="rule"><b>GRAND TOTAL</b></p>
+        
+    <!-- </div> -->
+    <h3 style="font-size: 25px; color: blue; margin-bottom: 30px;">Thank you!</h3>
+   <div class="last">
+    <p style="margin-left: 4px; padding-top: 6px;"><b>Notice</b></p>
+    <p style="margin-left: 4px; padding-top: 6px;">Kindly contact Ogun State Revenue Service on any issue concerning this receipt</p>
+   </div>
+</div>
+<div>
+   <div class="inputForm">
+       <input type="text" placeholder="Name" id="name">
+       <input type="text" placeholder="STIN" id="stin"><br><br>
+       <input type="text" placeholder="Direct Assessment" id="dirAssessment">
+       <input type="text" placeholder="Stamp Duty" id="stampDuty"><br><br>
+       <input type="text" placeholder="Development Levy" id="devLevy">
+       <input type="text" placeholder="Admin Charges" id="adminCharges">
+       <button type="submit" onclick="details()">Submit</button>
+   </div>
+</div>
+</div>
+  
+<script>
+    function details(){
+        var name = document.getElementById("name").value;
+        var stin = document.getElementById("stin").value;
+
+        // console.log(name);
+        // console.log(stin);
+        var dirAssessment = document.getElementById("dirAssessment").value;
+        var stampDuty = document.getElementById("stampDuty").value;
+        var devLevy = document.getElementById("devLevy").value;
+        var adminCharges = document.getElementById("adminCharges").value;
+       
+        document.getElementById("showname").innerHTML = name;
+        document.getElementById("showStin").innerHTML = stin;
+        document.getElementById("dirAmt").innerHTML = dirAssessment;
+        document.getElementById("stampAmt").innerHTML = stampDuty;
+        document.getElementById("devAmt").innerHTML = devLevy;
+        document.getElementById("adminAmt").innerHTML = adminCharges;
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.trex{
+    background-color: aliceblue;
+    width: 450px;
+    padding: 10px;
+    border: antiquewhite;
+    border-radius: 7px;
+    height: 600px;
+    
+}
+input{
+    width: 350px;
+}
+
+</style>
+
+    <div class="down">
+        <center>
+        <div class="trex">
+<center>
+<h2>Form</h2>
+</center>
+<br><br>
+<label for="Uname" ><b>Name</b></label>
+
+<input type="text"id="name" ><br><br>
+
+<label for="Uname"  ><b>Email Address</b></label>
+
+<input type="text" id="thismail">
+
+<p>Phone Number</p>
+<input type="text"  id="phoneNumber" >
+ <input type="text" placeholder="https://">
+<button ondblclick="segundetails()"> Submit</button>
+<p id="showname"></p>
+<p id="showemail"></p>
+<p id="shownumber"></p>
+</div>
+</center>
+    </div>
+
+<script>
+ function segundetails(){
+     var name = document.getElementById("name").value;
+     var myemail = document.getElementById("thismail").value;
+     var mynumber = document.getElementById("phoneNumber").value;
+  
+     document.getElementById("showname").innerHTML = name;
+    document.getElementById("showemail").innerHTML = myemail;
+    document.getElementById("shownumber").innerHTML = mynumber;
+
+ }
+</script>
+
+</body>
+</html>

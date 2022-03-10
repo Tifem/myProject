@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+     <input type="number" id="firstNumber">  <br><br>
+     
+     <select name="" id="">
+         <option value="" id="">Addition</option>
+         <option value="">Subtraction</option>
+         <option value="">Multiplication</option>
+         <option value="">Division</option>
+     </select> <br><br>
+     <input type="number" id="secondNumber"><br><br>
+     <p id="answer"></p>
+     <button onclick="multiply()">Multiply</button>
+     <button onclick="add()">add</button>
+     <button onclick="subtraction()">subtraction</button>
+     <button onclick="division()">division</button>
+     
+    </form>
+    
+    <script>
+        function multiply(){
+            a = document.getElementById("firstNumber").value;
+            b = document.getElementById("secondNumber").value;
+            document.getElementById("answer").innerHTML = a*b;
+        }
+    </script>
+</body>
+</html>

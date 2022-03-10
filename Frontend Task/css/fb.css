@@ -1,0 +1,81 @@
+body{
+    background-color: #f0f2f5;
+    /* margin-top: 180px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 500px; */
+}
+
+.first{
+    margin-top: 150px;
+    
+}
+
+.second{
+    /* background-color:red; */
+    width: 400px;
+    border-radius: 8px;
+    /* border: 1px solid #ffffff; */
+    float: right;
+    margin-right: 50px;
+    padding: 10px;
+    margin-top: 90px;
+    
+}
+input[type=email], input[type=password]{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 8px 10px 8px;
+    /* border: rgb(0, 132, 255); */
+    outline:red;
+    border-radius: 5px;
+    display: inline-block;
+    background: white;
+}
+.button{
+    background-color:#1877f2 ;
+    border: none;
+    color: white;
+    width: 97%;
+    margin: 5px ;
+    padding: 10px ;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.account{
+    background: #42b72a;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 40%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin-left: 120px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.text{
+    text-align: center;
+    color: #1877f2;
+    line-height: 1px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.content-down{
+    /* background-color: rgb(231, 26, 61); */
+    color: black;
+    text-align: center;
+
+}
+.content-right{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}

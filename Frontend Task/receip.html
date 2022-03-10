@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        
+    }
+    .maindiv{
+        background-color: green;
+        /*width: 50%;*/
+        display: flex;
+
+
+    }
+    .this{
+        width: 400px;
+        background-color: white;
+        text-align: right;
+        padding: 4px;
+        padding-right: 5px;
+        float: right;
+        margin-right: 30px;
+    }
+    .main{
+        display: absolute;
+    }
+    .seconddiv{
+        background-color: whitesmoke;
+        display: flex;
+        
+    }
+    .leftdiv{
+        line-height: 0%;
+            
+    }
+    .rightdiv{
+        /* padding: 5px; */
+        float: right;
+        
+    }
+    .left{
+        line-height: 1%;
+    }
+    table, th,td{
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+    table{
+        width: 100%;
+    }
+    .first{
+        background-color: green;
+        text-align: center;
+        color: white;
+    }
+    .description{
+        background-color: rgb(223, 215, 215);
+    }
+    .amount{
+        background-color: rgb(177, 165, 165);
+    }
+    .total{
+        background-color: green;
+        color: white;
+    }
+</style>
+<body>
+    <div class="maindiv">
+        <div class="main">
+            <img src="./Images/ogunlogo (1).png" alt="" width="70px" height="70px" style="padding:25px; padding-top:10px;">
+            <img src="./Images/ogunlogo (1).png" alt="" width="30px" height="30px">
+            <p style="font-size: 20px; color: white;"><b>Receipt</b></p>
+        </div>
+       <div>
+            <p class="this">OgunState Internal Revenue Service</p>
+        <p class="this">Parastatal building, Oke-mosan, Abeokuta, Ogun State</p>
+        <p class="this">080-602-407-72</p>
+        <p class="this">info@ogunstaterevenue.com</p>
+        </div>
+    </div>
+    <div class="seconddiv">
+        <div class="left div">
+            <p class="left">Receipt from:</p>
+            <p class="left">AKEEM MOSES RASAKI</p>
+            <p style="font-size: 15px;" class="left><b>STIN: 3716371810</b></p><br><br>
+            <p style="font-size: 17px; color: blue;" class="left><b> Payment code: 00700000000030</b></p>
+        </div>
+        <div class="right div">
+            <p style="font-size: 20px; color: blue;"><b> PAYMENT RECEIPT</b></p>
+            <p>Date issued</p>
+            <p>2021-11-22 18:01:05</p>
+            <img src="./Images/code.png" alt="" width="70px" height="70px">
+
+        </div>
+        
+    </div>
+    <div>
+        <table>
+            <tr>
+            <th class="first">#</th>
+            <th class="description" style="text-align: left;">Description</th>
+            <th class="amount">Total Amount Payable</th>
+            <th class="total">TOTAL</th>
+            </tr>
+            <tr>
+                <td class="first">1</td>
+                <td class="description">Direct Assessment</td>
+                <td class="amount"></td>
+                <td class="total"></td>
+            </tr>
+            <tr>
+                <td class="first">2</td>
+                <td class="description">Stamp Duty</td>
+                <td class="amount"></td>
+                <td class="total"></td>
+            </tr>
+            <tr>
+                <td class="first">3</td>
+                <td class="description">Development Levy</td>
+                <td class="amount"></td>
+                <td class="total"></td>
+            </tr>
+            <tr>
+                <td class="first">4</td>
+                <td class="description">Admin Charges</td>
+                <td class="amount"></td>
+                <td class="total"></td>
+            </tr>
+
+        </table>
+    </div>
+    
+</body>
+</html>

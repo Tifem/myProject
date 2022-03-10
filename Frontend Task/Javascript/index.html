@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Javascript Tutorial</title>
+    <style>
+        td input, td button{
+            width: 100%;
+        }
+
+        .answerr{
+            height: 50px;
+        }
+        td 
+        td,tr {
+            border-collapse: collapse;
+        }
+        table{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+<h1>Javascript Tutorial</h1> 
+   <p>Bolu is a <span id="demo"> girl</span></p>
+   <p>Bolu is a lady</p>
+   <p>Bolu is a woman</p>
+   <p>Bolu is a Beautiful girl</p>
+   <p>Bolu is a Beautiful lady</p>
+
+   <input type="text" id="mynumber1">
+   <input type="text" id="mynumber2">
+   <p id="answer"></p>
+   <!-- <p class="demo">Bolu is a Beautiful lady</p> -->
+   <button onclick="Concatenate('These two numbers are Concatenated ')">Concatenate</button>
+<br>
+   <table>
+       <tbody>
+
+           <tr>
+               <td colspan="4">
+<input type="text" style="width: 100%;" class="answerr">
+               </td>
+           </tr>
+           <tr>
+               <td><input type="button" value="1" id="myNumber3"></td>
+               <td><input type="button" value="2" id="myNumber4"></td>
+               <td><input type="button" value="3"5 id="myNumber"></td>
+        
+               <td><button onclick="addition">+</button></td>
+           </tr>
+           <tr>
+            <td><input type="button" value="4"></td>
+            <td><input type="button" value="5"></td>
+            <td><input type="button" value="6"></td>
+               <td><button>-</button></td>
+           </tr>
+           <tr>
+            <td><input type="button" value="7"></td>
+            <td><input type="button" value="8"></td>
+            <td><input type="button" value="9"></td>
+               <td><button>x</button></td>
+           </tr>
+         
+           <tr>
+            <td><input type="button" value="0"></td>
+            <td><input type="button" value="="></td>
+            <td colspan="2"><input type="button" value="C"></td>
+               
+           </tr>
+         
+       </tbody>
+   </table>
+   <button onclick="multiply()">Multiply</button>
+   <button onclick="add()">Add</button>
+   <button onclick="window.print()">Print</button>
+
+    <script>
+        function Concatenate(text){
+a = document.getElementById("mynumber1").value;
+b = document.getElementById("mynumber2").value;
+document.getElementById("answer").innerHTML = text + a + b;
+
+        }
+        function multiply(){
+            c = document.getElementById("mynumber1").value;
+            d = document.getElementById("mynumber2").value;
+            document.getElementById("answer").innerHTML = c*d;
+        }
+        function add(){
+            E = Number(document.getElementById("mynumber1").value);          
+            F = Number (document.getElementById("mynumber2").value); 
+            document.getElementById("answer").innerHTML = E+F         
+        }
+ function addition(){
+     g = document.getElementById("myNumber3").value;
+     h = document.getElementById("myNumber4").value;
+     document.getElementById("answer").innerHTML =g*h;
+ }
+    </script>
+</body>
+</html>

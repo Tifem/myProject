@@ -1,0 +1,94 @@
+body{
+    margin-top:30px ;
+   
+}
+.main{
+    margin: auto;
+    max-width: 800px;
+    /* background-color: rgb(247, 246, 246); */
+    background-color: rgba(255, 255, 255, 0);
+}
+.container{
+    display: flex;
+}
+.text{
+    padding: 10px;
+    /* background-color: violet; */
+}
+
+.para{
+    text-align: right;
+    line-height: 1px;
+    width: 620px;
+    margin-top: 25px;
+}
+.first{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.line{
+    border:none ;
+    /* width: 80%; */
+    margin-left: 10px;
+    border-bottom:0.5px solid black;
+}
+
+.content-left{
+    margin-left:14px ;
+}
+
+.text1{
+    line-height: 1px;
+    border-left: 5px solid rgb(27, 198, 237);
+    height: 55px;
+}
+
+.left{
+    margin-left: 3px;
+    padding-top: 5px;
+}
+.content-right{
+    line-height: 1px;
+    margin-right: 25px;
+    text-align: right;
+}
+table{
+    width: 100%;
+}
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid white;
+    padding: 15px;
+}
+.star{
+    background-color: green;
+    text-align: left;
+    width: 10px;
+    color: white;
+}
+.description{
+    background-color: #edededb8;
+    text-align: left;
+    width: 300px;
+}
+.amount{
+    background-color: #cfcfcf72;
+    width: 180px;
+}
+.total{
+    background-color: green;
+    color: white;
+}
+.rule{
+    line-height: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 50%;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid green;
+    margin-left: 25%;
+}
